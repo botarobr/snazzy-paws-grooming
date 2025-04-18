@@ -1,0 +1,80 @@
+<!--
+This is the contact.html page
+
+As required, the contact.html page for Snazzy Paws Grooming
+is the 'Contact us' page which must be containing:
+- a map using Google Maps or similar service
+- a non-functional form to enter:
+  - name
+  - email address
+  - phone number 
+  - comment
+  - submit button
+
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Snazzy Paws Grooming</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header role="banner">
+    <h1>Snazzy Paws Grooming</h1>
+  </header>
+  <nav role="navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Our Location</h2>
+      <!-- Embed updated Google Maps iframe -->
+      <div class="map-container" aria-label="Google Maps showing the hypothetical location for Snazzy Paws Grooming.">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.0716829449836!2d175.27837847609395!3d-37.78575957197398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d18dbf6c918d9%3A0x8c2b92d216af9b90!2sWintec%20House%2C%20Cnr%20Anglesea%20%26%20Nisbet%20Sts%2C%20Hamilton%203204%2C%20New%20Zealand!5e0!3m2!1sen!2snz!4v1712967781045!5m2!1sen!2snz"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          title="Snazzy Paws Grooming Location"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="booking_contactus-sections">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+          
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+         
+            <button type="submit">Submit</button>
+          </form>      
+      </section>   
+  </main>
+
+  <footer role="contentinfo">
+    <p>Opening Hours: Mon - Sat | 9am - 5pm</p>
+  </footer>
+
+</body>
+</html>

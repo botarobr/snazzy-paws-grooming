@@ -1,0 +1,72 @@
+<!--
+This is the booking.html page
+
+As required, the booking.html page for Snazzy Paws Grooming
+is the 'Appointment Booking' page which must be
+a non-functional form containing inputs for:
+- owner’s name
+- email address
+- dog’s name
+- breed
+- age
+- submit button.
+In addition to the required, 'Preferred date' and
+'Preferred time' of booking have been included
+as features that would be expected in a 'booking' webpage.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking - Snazzy Paws Grooming</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1>Snazzy Paws Grooming</h1>
+  </header>
+  <nav role="navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="booking_contactus-sections">
+      <h2>Book a Grooming Appointment</h2>
+      <form>
+          <label for="owner-name">Owner's Name:</label>
+          <input type="text" id="owner-name" name="owner-name" required />
+        
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        
+          <label for="dog-name">Dog's Name:</label>
+          <input type="text" id="dog-name" name="dog-name" required />
+        
+          <label for="breed">Breed:</label>
+          <input type="text" id="breed" name="breed" />
+        
+          <label for="age">Dog's Age:</label>
+          <input type="number" id="age" name="age" min="0" />
+        
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required />
+        
+          <label for="time">Preferred Time:</label>
+          <input type="time" id="time" name="time" required />
+        
+          <button type="submit">Submit</button>
+        </form>      
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <p>Opening Hours: Mon - Sat | 9am - 5pm</p>
+  </footer>
+</body>
+</html>

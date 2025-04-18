@@ -1,0 +1,192 @@
+/* This is the external CSS file for Snazzy Paws Grooming
+   The styles below have been applied across the pages: 
+   index.html
+   contact.html
+   gallery.html
+   services.html
+   booking.html
+*/
+
+/* General styles for all elements */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header with background color and padding */
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #e0e0e0;
+    padding: 10px 0;
+}
+
+/* Remove list style and center text */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Each link in the menu */
+nav ul li {
+    margin: 10px 0;
+}
+
+/* Link style */
+nav ul a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main image (main image on home page) */
+.Main-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Section padding and style */
+section {
+    padding: 20px;
+  /*  text-align: center;*/
+}
+
+/* Footer styles */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Responsive design: Desktop styles */
+@media screen and (min-width: 768px) {
+    /* Show nav items side by side on desktop */
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+}
+/* === Global table styles === */
+
+/* Table spacing and size */
+table {
+    width: 100%;
+    border-collapse: collapse; /* remove gaps between borders */
+    margin: 20px 0; /* spacing above and below the table */
+    font-size: 1rem;
+  }
+  
+  /* Table header background and text style */
+  table thead {
+    background-color: #e6e6e6;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  /* Highlight rows when mouse is over (for better UX) */
+  table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Alternate row colors for readability */
+  table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Make sure it looks good on mobile */
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.9rem;
+    }
+  }
+
+/* Gallery grid layout - always 4 columns and 4 rows */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(4, auto);   /* 4 rows */
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  /* Images within the gallery */
+.gallery-grid img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+/* Booking & Contact Us sections */
+.booking_contactus-sections {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .booking_contactus-sections h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .booking_contactus-sections form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .booking_contactus-sections label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .booking_contactus-sections input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+  
+  .booking_contactus-sections button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .booking_contactus-sections button:hover {
+    background-color: #555;
+  }
+    

@@ -110,7 +110,10 @@ table {
     text-align: center;
   }
   
-  /* Highlight rows when mouse is over (for better UX) */
+  /* Highlight rows when mouse is over (for better UX):
+  Reference used:
+  https://www.w3schools.com/Css/tryit.asp?filename=trycss_table_hover 
+  */
   table tr:hover {
     background-color: #f9f9f9;
   }
@@ -120,7 +123,10 @@ table {
     background-color: #f2f2f2;
   }
   
-  /* Make sure it looks good on mobile */
+  /* Making sure that table is also mobile-friendly... unable to work out on my own.
+  Workaround used:
+  https://www.onlineittuts.com/responsive-table-in-html-and-css.html
+  */
   @media (max-width: 768px) {
     table {
       font-size: 0.9rem;
@@ -130,12 +136,12 @@ table {
 /* Gallery grid layout - always 4 columns and 4 rows */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-template-rows: repeat(4, auto);   /* 4 rows */
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, auto); 
     gap: 15px;
     padding: 20px;
-  }
-  
+  } 
+ 
   /* Images within the gallery */
 .gallery-grid img {
     width: 100%;
